@@ -54,7 +54,23 @@ Enable users to:
 
 ## Folder Structure
 
-codecrafter-language-agnostic-visualization-app/ │ ├── backend/ │ ├── app.py │ ├── Dockerfile-python │ ├── Dockerfile-r │ ├── output/ # Auto-generated (Ignored in git) │ └── requirements.txt │ ├── frontend/ │ └── src/ + Other Files │ ├── .gitignore ├── README.md └── .env.example
+```
+codecrafter-language-agnostic-visualization-app/
+│
+├── backend/
+│   ├── app.py
+│   ├── Dockerfile-python
+│   ├── Dockerfile-r
+│   ├── output/              # Auto-generated (Ignored in git)
+│   └── requirements.txt
+│
+├── frontend/
+│   └── src/ + Other Files
+│
+├── .gitignore
+├── README.md
+└── .env.example
+```
 
 ---
 
@@ -79,22 +95,26 @@ Sample Visualizations
 Demo Video
 <a href="assets/Working_Demo.mp4" target="_blank">Click here to View or Download Demo Video</a>
 
-Challenges Faced & Solutions
-Challenge	Solution
-Flask Auto Restarting on File Save	Disabled use_reloader=False
-Plotly Image Export Issues	Used Kaleido (Python) & PhantomJS (R)
-Docker Volume Path & Output Management	Standardized to /app/output/visualization.png
-Image Caching in Frontend	Added Timestamp based Cache Busting
-Matplotlib & R Plot Saving Issues	Dynamic Frontend Guidelines for Users
-Git Submodule Issue in Backend	Removed .git from backend & Clean Re-Push
-Limitations
+## Challenges Faced & Solutions
+
+| Challenge | Solution |
+|-----------|-----------|
+| Flask Auto Restarting on File Save | Disabled `use_reloader=False` |
+| Plotly Image Export Issues | Used Kaleido (Python) & PhantomJS (R) |
+| Docker Volume Path & Output Management | Standardized to `/app/output/visualization.png` |
+| Image Caching in Frontend | Added Timestamp based Cache Busting |
+| Matplotlib & R Plot Saving Issues | Dynamic Frontend Guidelines for Users |
+| Git Submodule Issue in Backend | Removed `.git` from backend & Clean Re-Push |
+
+
+## Limitations
 * Interactive Charts are exported as static images due to execution environment
 * No Real-time interactivity (Image Based Output)
 * Synchronous Execution → One request at a time
 * No user code sandboxing beyond Docker isolation (Future Scope)
 
-Author
-Mohammed Pathariya
+## Author
+**Mohammed Johar Pathariya**
 
 Thank You for Visiting!
 Feel free to explore, try generating charts, and check out the demo video!
