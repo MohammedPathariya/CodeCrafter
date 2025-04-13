@@ -54,21 +54,7 @@ Enable users to:
 
 ## Folder Structure
 
-codecrafter-language-agnostic-visualization-app/
-│
-├── backend/
-│   ├── app.py
-│   ├── Dockerfile-python
-│   ├── Dockerfile-r
-│   ├── output/              # Auto-generated (Ignored in git)
-│   └── requirements.txt
-│
-├── frontend/
-│   └── src/ + Other Files
-│
-├── .gitignore
-├── README.md
-└── .env.example
+codecrafter-language-agnostic-visualization-app/ │ ├── backend/ │ ├── app.py │ ├── Dockerfile-python │ ├── Dockerfile-r │ ├── output/ # Auto-generated (Ignored in git) │ └── requirements.txt │ ├── frontend/ │ └── src/ + Other Files │ ├── .gitignore ├── README.md └── .env.example
 
 ---
 
@@ -87,8 +73,8 @@ npm install
 npm run dev
 
 Sample Visualizations
-![Python Bar Chart Output](assets/python_bar_chart.png)
-![R 3D Chart Output](assets/r_3d_chart.png)
+![Python Bar Chart Output](assets/PythonStatic.png)
+![R 3D Chart Output](assets/R3D.png)
 
 Demo Video
 <a href="assets/Working_Demo.mp4" target="_blank">Click here to View or Download Demo Video</a>
