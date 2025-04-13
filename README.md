@@ -69,7 +69,6 @@ codecrafter-language-agnostic-visualization-app/
 ├── .gitignore
 ├── README.md
 └── .env.example
-```
 
 ---
 
