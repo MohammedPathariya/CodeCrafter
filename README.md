@@ -2,7 +2,7 @@
 
 A dynamic web application that allows users to generate customized visualizations (Bar Charts, 3D Plots, Interactive Charts) by writing their own Python or R code. The backend securely executes the code in Docker containers and serves the generated visualization to the frontend for display.
 
----
+----
 
 ## Objective
 
